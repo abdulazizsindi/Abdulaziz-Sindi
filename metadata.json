@@ -1,0 +1,8 @@
+{
+  "requestFramePermissions": [
+    "camera",
+    "geolocation"
+  ],
+  "name": "",
+  "description": ""
+}

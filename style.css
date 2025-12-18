@@ -1,0 +1,51 @@
+
+:root {
+    --emerald-primary: #10b981;
+}
+
+body {
+    font-family: 'Cairo', sans-serif;
+    -webkit-tap-highlight-color: transparent;
+}
+
+/* Toggle Switch Custom Styles */
+#toggle-location.active {
+    background-color: var(--emerald-primary);
+}
+
+#toggle-location.active .dot {
+    transform: translateX(-24px); /* RTL logic */
+}
+
+/* Section Transitions */
+.section-content {
+    animation: fadeIn 0.3s ease-out;
+}
+
+@keyframes fadeIn {
+    from { opacity: 0; transform: translateY(10px); }
+    to { opacity: 1; transform: translateY(0); }
+}
+
+/* Map specific tweaks */
+#map {
+    border-radius: 1rem;
+}
+
+/* Custom hiding for non-privileged roles */
+.hidden-role {
+    display: none;
+}
+
+/* Director-specific display classes */
+body.role-DIRECTOR .director-only {
+    display: block !important;
+}
+
+/* Responsive Table Fixes */
+@media (max-width: 640px) {
+    th:nth-child(3), td:nth-child(3),
+    th:nth-child(4), td:nth-child(4) {
+        display: none;
+    }
+}
